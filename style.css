@@ -1,0 +1,460 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fdf7f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #d35400;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #f39c12;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #f39c12, #e67e22);
+  padding: 15px 5%;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-weight: 500;
+}
+/* ===== Featured Section / Hero ===== */
+/* ===== Featured Journey Section ===== */
+.featured {
+  padding: 40px 5%;
+  background: linear-gradient(135deg, #e67e22, #f39c12); /* warm gradient */
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  margin: 20px 5%;
+}
+
+.featured h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.featured-post {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+}
+
+
+.featured-post div h3 {
+  font-size: 1.5rem;               /* smaller subheading */
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.featured-post div p {
+  font-size: 0.95rem;              /* slightly smaller text */
+  color: #fff;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.featured-post div a {
+  display: inline-block;
+  padding: 8px 16px;               /* smaller button */
+  background-color: #fff;
+  color: #e67e22;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.featured-post div a:hover {
+  background-color: #f39c12;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ===== Main Container ===== */
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 50px 5%;
+  flex-wrap: wrap;
+}
+
+/* ===== Blog Posts ===== */
+.blog-posts {
+  flex: 3;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.post-card {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.post-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.post-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.post-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+
+.post-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #e67e22;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.post-card a:hover {
+  background-color: #f39c12;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.post-image {
+  flex: 0 0 300px;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+
+/* ===== Sidebar ===== */
+.sidebar {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  height: fit-content;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  color: #d35400;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.sidebar ul li a {
+  color: #333;
+  display: block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+/* ===== About Section ===== */
+.about {
+  padding: 60px 5%;
+  background-color: #fef5e6;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.15rem;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+  padding: 60px 5%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background-color: #f39c12;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 25px 5%;
+}
+
+footer .socials {
+  margin-top: 12px;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 0 6px;
+  transition: color 0.3s;
+}
+
+footer .socials a:hover {
+  color: #f39c12;
+}
+
+/* ===== Blog Post Detail Page ===== */
+.post-detail {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.post-detail h1 {
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  color: #d35400;
+  text-align: center;
+  font-weight: 700;
+}
+
+.post-detail img {
+  width: 100%;
+  max-width: 500px; /* smaller to retain quality */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  object-fit: contain;
+}
+
+.post-detail p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.post-detail a {
+  color: #e67e22;
+  font-weight: 500;
+}
+
+.post-detail a:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+/* Drop cap effect */
+.post-detail p:first-of-type::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+  line-height: 1;
+  color: #e67e22;
+}
+
+/* ===== Blog Post Titles ===== */
+.blog-posts .post-card h3 {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: #e67e22; /* you can change to any color you like */
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.blog-posts .post-card h3:hover {
+  color: #f39c12; /* hover effect for titles */
+}
+
+/* ===== Blog Post Card Hover Effect ===== */
+.blog-posts .post-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.blog-posts .post-card:hover {
+  transform: translateY(-5px);           /* slight lift */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* stronger shadow */
+  background-color: #fff3e0;            /* subtle warm background on hover */
+}
+
+.blog-posts .post-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #e67e22;
+  transition: color 0.3s;
+}
+
+.blog-posts .post-card:hover h3 {
+  color: #f39c12; /* change title color on hover */
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .featured-post {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-post img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-detail {
+    padding: 30px 15px;
+  }
+
+  .post-detail h1 {
+    font-size: 2rem;
+  }
+
+  .featured h2 {
+    font-size: 2.4rem;
+  }
+
+  .featured-post div h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-post {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .post-image {
+    flex: 1 1 100%;
+  }
+
+  .featured h2 {
+    font-size: 2rem;
+  }
+
+  .post-card h3 {
+    font-size: 1.5rem;
+  }
+}
